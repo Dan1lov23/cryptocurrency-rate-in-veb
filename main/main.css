@@ -22,7 +22,7 @@ body {
     }
 }
 
-.bitcoinMain, .ethereumMain, .altcoinMain, .cardanoMain {
+.bitcoinMain, .ethereumMain, .altcoinMain, .cardanoMain, .dashMain, .litecoinMain, .tetherMain, .solanaMain {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -32,7 +32,7 @@ body {
     width: 200px;
 }
 
-.bitcoinMain:hover, .ethereumMain:hover, .altcoinMain:hover, .cardanoMain:hover {
+.bitcoinMain:hover, .ethereumMain:hover, .altcoinMain:hover, .cardanoMain:hover, .dashMain:hover, .litecoinMain:hover, .tetherMain:hover, .solanaMain:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -43,12 +43,12 @@ body {
     color: #007bff;
 }
 
-.bitcoinLogo, .ethereumLogo, .altcoinLogo, .cardanoLogo {
+.bitcoinLogo, .ethereumLogo, .altcoinLogo, .cardanoLogo, .dashLogo, .litecoinLogo, .tetherLogo, .solanaLogo {
     font-size: 40px;
     margin: 10px 0;
 }
 
-.bitcoin, .ethereum, .altcoin, .cardano {
+.bitcoin, .ethereum, .altcoin, .cardano, .dash, .litecoin, .tethereum, .solana {
     font-size: 28px;
     color: #333;
     margin-top: 10px;
