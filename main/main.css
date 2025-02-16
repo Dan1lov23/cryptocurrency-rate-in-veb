@@ -1,0 +1,86 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.titleContainer {
+    text-align: center;
+    padding: 40px;
+    font-size: 30px;
+}
+
+.cryptocurrencyRate {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.bitcoinMain, .ethereumMain, .altcoinMain, .cardanoMain {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 200px;
+}
+
+.bitcoinMain:hover, .ethereumMain:hover, .altcoinMain:hover, .cardanoMain:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.bitcoinLogo, .ethereumLogo, .altcoinLogo, .cardanoLogo {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.bitcoin, .ethereum, .altcoin, .cardano {
+    font-size: 28px;
+    color: #333;
+    margin-top: 10px;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.coinName {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.themeChange {
+    text-align: right;
+    button {
+        background: #f8f9fa;
+        border: black 1px solid;
+        border-radius: 15px;
+        width: 60px;
+        height: 60px;
+        transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    }
+    button:hover {
+        transform: scale(1.1);
+    }
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cripto tracker</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="themeChange">
+            <button onclick="themeChange()"><img src="../img/free-icon-night-mode-12377255.png"/></button>
+        </div>
+        <div class="titleContainer" id="title">
+            <h1>Cripto</h1>
+        </div>
+        <div class="cryptocurrencyRate">
+            <a href="https://www.rbc.ru/crypto/currency/btcusd">
+                <div class="bitcoinMain">
+                    <div class="number">1</div>
+                    <div id="bitcoinLogo" class="bitcoinLogo"></div>
+                    <div id="bitcoin" class="bitcoin"></div>
+                    <div class="coinName" id="bitcoinName"></div>
+                </div>
+            </a>
+            <a href="https://www.rbc.ru/crypto/currency/ethusd">
+                <div class="ethereumMain">
+                    <div class="number">2</div>
+                    <div id="ethereumLogo" class="ethereumLogo"></div>
+                    <div id="ethereum" class="ethereum"></div>
+                    <div class="coinName" id="ethereumName"></div>
+                </div>
+            </a>
+            <a href="https://crypto.com/price/ru/altcoin-token">
+                <div class="altcoinMain">
+                    <div class="number">3</div>
+                    <div id="altcoinLogo" class="altcoinLogo"></div>
+                    <div id="altcoin" class="altcoin"></div>
+                    <div class="coinName" id="altcoinName"></div>
+                </div>
+            </a>
+            <a href="https://ru.investing.com/crypto/cardano">
+                <div class="cardanoMain">
+                    <div class="number">4</div>
+                    <div id="cardanoLogo" class="cardanoLogo"></div>
+                    <div id="cardano" class="cardano"></div>
+                    <div class="coinName" id="cardanoName"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+<script src="../components/themeChange.js"></script>
+</html>
