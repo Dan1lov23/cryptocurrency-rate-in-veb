@@ -136,4 +136,25 @@ async function getTetherPrice() {
         console.log('Ошибка', error);
     }
 }
+
 getTetherPrice();
+
+async function getSolanaPrice() {
+    // Секция кода с solana
+    const solanaName = 'solana';
+    try {
+        const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=rub');
+        if (!response.ok) {
+            throw new Error('Сеть не в порядке, не удалось получить данные');
+        }
+        const data = await response.json();
+        const solanaPrice = data.solana.rub;
+        document.getElementById('solanaLogo').innerHTML = `<img src="../img/solana.png"/>`;
+        document.getElementById('solana').innerHTML = `${solanaPrice}₽`;
+        document.getElementById('solanaName').innerText = `${solanaName}`;
+    } catch (error) {
+        console.log('Ошибка', error);
+    }
+}
+
+getSolanaPrice();
